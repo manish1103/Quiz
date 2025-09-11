@@ -1,0 +1,66 @@
+{
+  "General Knowledge": [
+    { "id": 1, "question": "Which is the largest continent in the world?", "options": ["Africa", "Asia", "Europe", "North America"], "answer": 2 },
+    { "id": 2, "question": "Which is the national bird of India?", "options": ["Peacock", "Parrot", "Eagle", "Sparrow"], "answer": 1 },
+    { "id": 3, "question": "What is the currency of Japan?", "options": ["Yuan", "Yen", "Won", "Dollar"], "answer": 2 },
+    { "id": 4, "question": "Which is the smallest ocean in the world?", "options": ["Arctic Ocean", "Indian Ocean", "Pacific Ocean", "Atlantic Ocean"], "answer": 1 },
+    { "id": 5, "question": "Who invented the light bulb?", "options": ["Thomas Edison", "Newton", "Graham Bell", "Einstein"], "answer": 1 },
+    { "id": 6, "question": "Which country is known as the Land of Rising Sun?", "options": ["Japan", "India", "China", "Korea"], "answer": 1 },
+    { "id": 7, "question": "What is the capital of Australia?", "options": ["Sydney", "Melbourne", "Canberra", "Perth"], "answer": 3 },
+    { "id": 8, "question": "Which organ purifies blood in the human body?", "options": ["Heart", "Liver", "Kidney", "Lungs"], "answer": 3 },
+    { "id": 9, "question": "What is H2O commonly known as?", "options": ["Oxygen", "Hydrogen", "Water", "Salt"], "answer": 3 },
+    { "id": 10, "question": "Which is the national animal of India?", "options": ["Lion", "Tiger", "Elephant", "Leopard"], "answer": 2 }
+  ],
+
+  "Sports": [
+    { "id": 11, "question": "How many players are there in a football team?", "options": ["9", "10", "11", "12"], "answer": 3 },
+    { "id": 12, "question": "Who is known as the God of Cricket?", "options": ["MS Dhoni", "Sachin Tendulkar", "Virat Kohli", "Ricky Ponting"], "answer": 2 },
+    { "id": 13, "question": "In which country were the first Olympic Games held?", "options": ["USA", "Greece", "France", "Italy"], "answer": 2 },
+    { "id": 14, "question": "How many rings are there in the Olympic flag?", "options": ["4", "5", "6", "7"], "answer": 2 },
+    { "id": 15, "question": "What is the national sport of Canada?", "options": ["Cricket", "Ice Hockey", "Football", "Tennis"], "answer": 2 },
+    { "id": 16, "question": "Which country won the FIFA World Cup 2018?", "options": ["Brazil", "France", "Germany", "Argentina"], "answer": 2 },
+    { "id": 17, "question": "In cricket, how many balls are there in one over?", "options": ["5", "6", "7", "8"], "answer": 2 },
+    { "id": 18, "question": "Who is called the Flying Sikh of India?", "options": ["Milkha Singh", "Kapil Dev", "Sunil Gavaskar", "P. T. Usha"], "answer": 1 },
+    { "id": 19, "question": "Which country is famous for Sumo Wrestling?", "options": ["India", "China", "Japan", "Thailand"], "answer": 3 },
+    { "id": 20, "question": "How many players are there in a basketball team?", "options": ["4", "5", "6", "7"], "answer": 2 }
+  ],
+
+  "History": [
+    { "id": 21, "question": "Who was the first President of India?", "options": ["Jawaharlal Nehru", "Rajendra Prasad", "Dr. Radhakrishnan", "B. R. Ambedkar"], "answer": 2 },
+    { "id": 22, "question": "Who was the first Prime Minister of India?", "options": ["Mahatma Gandhi", "Jawaharlal Nehru", "Sardar Patel", "Lal Bahadur Shastri"], "answer": 2 },
+    { "id": 23, "question": "In which year did India get independence?", "options": ["1942", "1945", "1947", "1950"], "answer": 3 },
+    { "id": 24, "question": "Who was known as the Iron Man of India?", "options": ["Bhagat Singh", "Subhash Chandra Bose", "Sardar Vallabhbhai Patel", "Jawaharlal Nehru"], "answer": 3 },
+    { "id": 25, "question": "Who founded the Maurya Empire?", "options": ["Ashoka", "Chandragupta Maurya", "Bindusara", "Chanakya"], "answer": 2 },
+    { "id": 26, "question": "Which Mughal emperor built the Taj Mahal?", "options": ["Akbar", "Aurangzeb", "Shah Jahan", "Babur"], "answer": 3 },
+    { "id": 27, "question": "Who was the first woman ruler of Delhi?", "options": ["Rani Lakshmibai", "Raziyya Sultan", "Ahilyabai Holkar", "Chand Bibi"], "answer": 2 },
+    { "id": 28, "question": "In which year did World War II end?", "options": ["1942", "1945", "1947", "1950"], "answer": 2 },
+    { "id": 29, "question": "Who was the last Governor-General of India?", "options": ["Mountbatten", "Rajendra Prasad", "C. Rajagopalachari", "Nehru"], "answer": 3 },
+    { "id": 30, "question": "Which Indian freedom fighter gave the slogan 'Inquilab Zindabad'?", "options": ["Bhagat Singh", "Mangal Pandey", "Lala Lajpat Rai", "Bal Gangadhar Tilak"], "answer": 1 }
+  ],
+
+  "Movies": [
+    { "id": 31, "question": "Who directed the movie 'Titanic'?", "options": ["Steven Spielberg", "James Cameron", "Christopher Nolan", "Martin Scorsese"], "answer": 2 },
+    { "id": 32, "question": "Which movie won the Oscar for Best Picture in 2020?", "options": ["Joker", "Parasite", "1917", "Ford v Ferrari"], "answer": 2 },
+    { "id": 33, "question": "Who played the role of Iron Man in Marvel movies?", "options": ["Chris Evans", "Chris Hemsworth", "Robert Downey Jr.", "Mark Ruffalo"], "answer": 3 },
+    { "id": 34, "question": "Which is the first Indian movie?", "options": ["Raja Harishchandra", "Mughal-e-Azam", "Sholay", "Mother India"], "answer": 1 },
+    { "id": 35, "question": "In which year was the first Harry Potter movie released?", "options": ["1999", "2001", "2003", "2005"], "answer": 2 },
+    { "id": 36, "question": "Which actor is known as the King of Bollywood?", "options": ["Salman Khan", "Amitabh Bachchan", "Shah Rukh Khan", "Ranbir Kapoor"], "answer": 3 },
+    { "id": 37, "question": "Which movie features the song 'My Heart Will Go On'?", "options": ["Titanic", "Avatar", "Frozen", "Aladdin"], "answer": 1 },
+    { "id": 38, "question": "Which movie series features the character 'Jack Sparrow'?", "options": ["Harry Potter", "Pirates of the Caribbean", "Lord of the Rings", "Star Wars"], "answer": 2 },
+    { "id": 39, "question": "Which was the first animated Disney movie?", "options": ["Snow White", "Cinderella", "Bambi", "Pinocchio"], "answer": 1 },
+    { "id": 40, "question": "Who directed 'Inception'?", "options": ["Steven Spielberg", "James Cameron", "Christopher Nolan", "Ridley Scott"], "answer": 3 }
+  ],
+
+  "Science": [
+    { "id": 41, "question": "What is the boiling point of water?", "options": ["50°C", "75°C", "100°C", "150°C"], "answer": 3 },
+    { "id": 42, "question": "Which planet is known as the Red Planet?", "options": ["Earth", "Mars", "Jupiter", "Venus"], "answer": 2 },
+    { "id": 43, "question": "What gas do humans breathe in to survive?", "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"], "answer": 1 },
+    { "id": 44, "question": "Which is the fastest land animal?", "options": ["Lion", "Cheetah", "Tiger", "Horse"], "answer": 2 },
+    { "id": 45, "question": "Which vitamin is produced in the body when exposed to sunlight?", "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"], "answer": 4 },
+    { "id": 46, "question": "What is the center of an atom called?", "options": ["Proton", "Nucleus", "Electron", "Neutron"], "answer": 2 },
+    { "id": 47, "question": "Which part of the plant conducts photosynthesis?", "options": ["Root", "Stem", "Leaf", "Flower"], "answer": 3 },
+    { "id": 48, "question": "What is the chemical symbol of water?", "options": ["H2", "O2", "H2O", "CO2"], "answer": 3 },
+    { "id": 49, "question": "How many bones are there in the adult human body?", "options": ["206", "210", "208", "201"], "answer": 1 },
+    { "id": 50, "question": "Which gas is used by plants during photosynthesis?", "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"], "answer": 2 }
+  ]
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Category</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-5 text-center">
+    <h2 class="mb-4">Choose a Quiz Category</h2>
+    <form method="POST">
+        <div class="mb-3 w-50 mx-auto">
+            <select name="category" class="form-select" required>
+                <option value="General Knowledge">General Knowledge</option>
+                <option value="Sports">Sports</option>
+                <option value="History">History</option>
+                <option value="Movies">Movies</option>
+                <option value="Science">Science</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success btn-lg">Start Quiz</button>
+    </form>
+</div>
+</body>
+</html>

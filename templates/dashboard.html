@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary mb-4">📊 Admin Dashboard</h2>
+
+    <div class="d-flex justify-content-between mb-3">
+        <h5>All Quiz Results</h5>
+        <a href="{{ url_for('home') }}" class="btn btn-outline-secondary">🏠 Back to Home</a>
+    </div>
+
+    {% if data %}
+    <div class="table-responsive shadow-sm">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Username</th>
+                    <th>Category</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in data %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ entry.username }}</td>
+                    <td>{{ entry.category }}</td>
+                    <td><span class="badge bg-success">{{ entry.score }}</span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="alert alert-warning text-center"> 
+        ⚠️ No quiz data found!
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
