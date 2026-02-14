@@ -14,8 +14,10 @@ if not os.path.exists("data"):
 
 LEADERBOARD_FILE = os.path.join("data", "leaderboard.json")
 
+
 def save_score(username, score, category):
     data = []
+
     if os.path.exists(LEADERBOARD_FILE):
         try:
             with open(LEADERBOARD_FILE, "r", encoding="utf-8") as f:
@@ -23,7 +25,11 @@ def save_score(username, score, category):
         except:
             data = []
 
-    data.append({"username": username, "score": score, "category": category})
+    data.append({
+        "username": username,
+        "score": score,
+        "category": category
+    })
 
     with open(LEADERBOARD_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4)
@@ -32,7 +38,7 @@ def save_score(username, score, category):
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        name = request.form.get("name", "").strip()  
+        name = request.form.get("name", "").strip()
         category = request.form.get("category", "")
 
         if not name or not category:
@@ -49,21 +55,28 @@ def index():
     return render_template("index.html", categories=list(QUESTIONS_DATA.keys()))
 
 
-@app.route("/quiz", methods=["GET"])
+@app.route("/quiz")
 def quiz():
     category = session.get("category")
     username = session.get("username")
+
     if not category or not username:
         return redirect(url_for("index"))
 
     questions = QUESTIONS_DATA.get(category, [])
-    return render_template("quiz.html", questions=questions, category=category, username=username)
+    return render_template(
+        "quiz.html",
+        questions=questions,
+        category=category,
+        username=username
+    )
 
 
 @app.route("/submit", methods=["POST"])
 def submit():
     category = session.get("category")
     username = session.get("username")
+
     if not category or not username:
         return redirect(url_for("index"))
 
@@ -76,19 +89,19 @@ def submit():
         selected = request.form.get(form_key)
         correct_idx = int(q["answer"])
 
-        if selected:
-            try:
-                sel_idx = int(selected)
-            except:
-                sel_idx = None
-        else:
+        try:
+            sel_idx = int(selected) if selected else None
+        except:
             sel_idx = None
 
         selected_text = (
-            q["options"][sel_idx - 1] if sel_idx and 1 <= sel_idx <= len(q["options"]) else "Not Attempted"
+            q["options"][sel_idx - 1]
+            if sel_idx and 1 <= sel_idx <= len(q["options"])
+            else "Not Attempted"
         )
+
         correct_text = q["options"][correct_idx - 1]
-        is_correct = (sel_idx == correct_idx)
+        is_correct = sel_idx == correct_idx
 
         if is_correct:
             score += 1
@@ -119,13 +132,3 @@ def restart():
     session.pop("category", None)
     session.pop("username", None)
     return redirect(url_for("index"))
-    
-    
-    if __main__ == "__main__":
-    app.run()
-
-
-
-  
-
-
