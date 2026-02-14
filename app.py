@@ -119,9 +119,11 @@ def restart():
     session.pop("category", None)
     session.pop("username", None)
     return redirect(url_for("index"))
-
-    if __name__ == "__main__":
+    
+    
+    if __main__ == "__main__":
     app.run()
+
 
 
   
