@@ -2,12 +2,13 @@ from flask import Flask, render_template, request, redirect, url_for, session
 import json, os
 
 app = Flask(__name__)
-app.secret_key = "quiz_secret_key_123"  
+app.secret_key = "quiz_secret_key_123"
 
+# Load questions
 with open("questions.json", "r", encoding="utf-8") as f:
     QUESTIONS_DATA = json.load(f)
 
-
+# Leaderboard setup
 if not os.path.exists("data"):
     os.makedirs("data")
 
@@ -31,17 +32,16 @@ def save_score(username, score, category):
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        name = request.form.get("name", "").strip()
+        name = request.form.get("name", "").strip()  
         category = request.form.get("category", "")
 
         if not name or not category:
             return render_template(
                 "index.html",
                 categories=list(QUESTIONS_DATA.keys()),
-                error="Please enter name and select a category."
+                error="Please enter your name and select a category."
             )
 
-    
         session["username"] = name
         session["category"] = category
         return redirect(url_for("quiz"))
@@ -71,11 +71,10 @@ def submit():
     score = 0
     results = []
 
-
     for i, q in enumerate(questions, start=1):
         form_key = f"q{i}"
         selected = request.form.get(form_key)
-        correct_idx = int(q["answer"])  
+        correct_idx = int(q["answer"])
 
         if selected:
             try:
@@ -101,9 +100,7 @@ def submit():
             "is_correct": is_correct
         })
 
-    
     save_score(username, score, category)
-
 
     session.pop("category", None)
     session.pop("username", None)
